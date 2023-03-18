@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ideal Weight</string>
+    <string name="tinggi_badan">Tinggi badan</string>
+    <string name="berat_badan">Berat badan</string>
+    <string name="tombol_hitung">Hitung</string>
+    <string name="label_nama">Nama</string>
+    <string name="input_usia">Usia</string>
+    <string name="input_nama">Nama</string>
+    <string name="label_usia">Usia</string>
+    <string name="label_tinggi_badan">Tinggi badan (cm)</string>
+    <string name="label_berat_badan">Berat badan (kg)</string>
+    <string name="label_ideal">Ideal</string>
+    <string name="bmi_tekas">BMI</string>
+    <string name="label_berat_ideal">Berat ideal</string>
+    <string name="output_berat_ideal">...</string>
+</resources>

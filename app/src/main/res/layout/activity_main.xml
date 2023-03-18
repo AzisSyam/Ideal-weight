@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/constraint_color"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_nama"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/input_nama"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:shadowRadius="12"
+        android:textColor="@color/output_color"
+
+        android:textColorHint="@color/output_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_status_ideal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/input_tinggi_badan"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:hint="@string/tinggi_badan"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/output_color"
+        android:textColorHint="@color/output_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input_usia"
+        app:layout_constraintTop_toBottomOf="@+id/input_usia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/input_usia"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:hint="@string/input_usia"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="@color/output_color"
+        android:textColorHint="@color/output_color"
+        app:layout_constraintEnd_toEndOf="@+id/input_nama"
+        app:layout_constraintStart_toStartOf="@+id/input_nama"
+        app:layout_constraintTop_toBottomOf="@+id/input_nama" />
+
+    <Button
+        android:id="@+id/tombol_hitung"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hitung_button_rounded"
+        android:text="@string/tombol_hitung"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_tinggi_badan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/input_berat_badan"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:hint="@string/berat_badan"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/output_color"
+        android:textColorHint="@color/output_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_usia"
+        app:layout_constraintTop_toBottomOf="@+id/input_usia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_status_ideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ideal"
+        android:textAlignment="textStart"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_berat_ideal"
+        app:layout_constraintTop_toBottomOf="@+id/label_berat_ideal"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/label_berat_badan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_berat_badan"
+        android:textAlignment="textStart"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_tinggi_badan"
+        app:layout_constraintTop_toBottomOf="@+id/label_tinggi_badan"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/label_usia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_usia"
+        android:textAlignment="textStart"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_nama"
+        app:layout_constraintTop_toBottomOf="@+id/label_nama"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_tinggi_badan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_tinggi_badan"
+        android:textAlignment="textStart"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_usia"
+        app:layout_constraintTop_toBottomOf="@+id/label_usia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:text="@string/label_nama"
+        android:textAlignment="textStart"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/isi_tinggi_badan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/isi_usia"
+        app:layout_constraintTop_toBottomOf="@+id/isi_usia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/isi_usia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/isi_nama"
+        app:layout_constraintTop_toBottomOf="@+id/isi_nama"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/isi_status_ideal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/output_berat_ideal"
+        app:layout_constraintTop_toBottomOf="@+id/output_berat_ideal"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
+        android:id="@+id/isi_berat_badan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/isi_tinggi_badan"
+        app:layout_constraintTop_toBottomOf="@+id/isi_tinggi_badan"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/isi_nama"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:text="..."
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/bmi_teks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/bmi_tekas"
+        android:textColor="@color/border"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_berat_ideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_berat_ideal"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/label_berat_badan"
+        app:layout_constraintTop_toBottomOf="@+id/label_berat_badan" />
+
+    <TextView
+        android:id="@+id/output_berat_ideal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/output_berat_ideal"
+        android:textAlignment="textEnd"
+        android:textColor="@color/output_color"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/isi_berat_badan"
+        app:layout_constraintTop_toBottomOf="@+id/isi_berat_badan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
